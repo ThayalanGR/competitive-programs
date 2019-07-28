@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Extract",
+            "request": "launch",
+            "mainClass": "Extract"
+        }
+    ]
+}
