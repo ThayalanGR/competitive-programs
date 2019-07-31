@@ -3,7 +3,7 @@ def pageCount(n, p):
 
     if(p == 1):
         output = 0
-    elif(n == p or n % 2 != 0 and n-1 == p):
+    elif(n == p or (n % 2 != 0 and n-1 == p)):
         output = 0
     else:
         forward = 0
