@@ -16,7 +16,6 @@ def xorWhat(case, arr, modification):
             # from 0 to count
             for k in range(count):
                 sum = sum ^ tempArr[k]
-                print(sum)
             if(list(bin(sum)).count("1") % 2 == 0):
                 tempOut.append(count)
             count += 1
@@ -30,8 +29,8 @@ def xorWhat(case, arr, modification):
 
         result.append(max(tempOut))
 
-    return "Case #"+str(case)+": "+" ".join(list(map(str, result)))
-
+    stri = "Case #{}: {}"+" {}"*(len(result)-1)
+    return stri.format(case, *result)
 
 if __name__ == "__main__":
     # no of test cases input
