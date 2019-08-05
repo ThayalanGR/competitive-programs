@@ -89,4 +89,4 @@ Steps:
 9. position of number 9=(2-1,2+1)=(1,3)=(1,0) //wrap around
 ```
 
-> [magicSquare.py](https://github.com/ThayalanGR/competitive-programs/blob/master/competitive_programs/magicSquare.py)
+> [magicSquare.py](https://github.com/ThayalanGR/competitive-programs/blob/master/challenges/magicSquare.py)
