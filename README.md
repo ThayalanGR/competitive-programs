@@ -11,7 +11,7 @@ This Repository contains
 
 **Index :-**
 
-1. Kadanes Algorithm
+1. [Kadanes Algorithm](https://github.com/ThayalanGR/competitive-programs#kadanes-algorithm)
 
 ---
 
@@ -43,8 +43,8 @@ This problem, also known as Maximum Subarray Problem, is a very common question 
 
 **Index :-**
 
-1. [Magic Square](https://link)
-2. [Harshad Matrix](https://link)
+1. [Magic Square](https://github.com/ThayalanGR/competitive-programs#magic-square)
+2. [Harshad Matrix](https://github.com/ThayalanGR/competitive-programs#harshad-matrix)
 
 ---
 
@@ -76,7 +76,9 @@ Magic Square of size 3
 
 ```
 
-> [magicSquare.py](https://github.com/ThayalanGR/competitive-programs/blob/master/challenges/magicSquare.py)
+> [magicSquare.py](https://github.com/ThayalanGR/competitive-programs/blob/master/challenges/magicSquare.py) (normal-method)
+
+> [magicSquare2.py](https://github.com/ThayalanGR/competitive-programs/blob/master/challenges/magicSquare2.py) (alternate method - easy)
 
 ---
 
