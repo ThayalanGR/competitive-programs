@@ -26,11 +26,11 @@ def isHarshad(num):
 
 if __name__ == "__main__":
 
-    lenOfMat = int(raw_input("Enter len of Matrix: "))
+    lenOfMat = int(input("Enter len of Matrix: "))
     inpMatrix = []
     # inpMatrix = [[1, 2, 3, 4],[5, 6, 7, 8],[9, 10, 11, 12],[13, 14, 15, 16]]
     for i in range(lenOfMat):
-        tempArr = list(map(int, raw_input().split(" ")))
+        tempArr = list(map(int, input().split(" ")))
         inpMatrix.append(tempArr)
     
     result = harshadMatrix(inpMatrix)

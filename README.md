@@ -2,9 +2,8 @@
 
 This Repository contains
 
-> - **solutions for competitive programs.**
-> - **Algorithms.**
-> - **Datastructures.**
+> - [**Algorithms**](https://github.com/ThayalanGR/competitive-programs#algorithms)
+> - [**Challenges**](https://github.com/ThayalanGR/competitive-programs#challenges)
 
 ---
 
@@ -16,7 +15,7 @@ This Repository contains
 
 ---
 
-> **Kadanes Algorithm**
+> ## Kadanes Algorithm
 
 Kadane's Algorithm to find Maximum Sum Subarray.
 This problem, also known as Maximum Subarray Problem, is a very common question in a coding interview, and this gives the optimal answer.
@@ -40,15 +39,16 @@ This problem, also known as Maximum Subarray Problem, is a very common question 
 
 ---
 
-# Competitve Programs
+# Challenges
 
 **Index :-**
 
-1. Magic Square
+1. [Magic Square](https://link)
+2. [Harshad Matrix](https://link)
 
 ---
 
-> **Magic square**
+> ## Magic square
 
 A magic square of order n is an arrangement of n^2 numbers, usually distinct integers, in a square, such that the n numbers in all rows, all columns, and both diagonals sum to the same constant. A magic square contains the integers from 1 to n^2.
 
@@ -74,19 +74,29 @@ Magic Square of size 3
  9  5  1
  4  3  8
 
-Steps:
-1. position of number 1 = (3/2, 3-1) = (1, 2)
-2. position of number 2 = (1-1, 2+1) = (0, 0)
-3. position of number 3 = (0-1, 0+1) = (3-1, 1) = (2, 1)
-4. position of number 4 = (2-1, 1+1) = (1, 2)
-   Since, at this position, 1 is there. So, apply condition 2.
-   new position=(1+1,2-2)=(2,0)
-5. position of number 5=(2-1,0+1)=(1,1)
-6. position of number 6=(1-1,1+1)=(0,2)
-7. position of number 7 = (0-1, 2+1) = (-1,3) // this is tricky, see condition 3
-   new position = (0, 3-2) = (0,1)
-8. position of number 8=(0-1,1+1)=(-1,2)=(2,2) //wrap around
-9. position of number 9=(2-1,2+1)=(1,3)=(1,0) //wrap around
 ```
 
 > [magicSquare.py](https://github.com/ThayalanGR/competitive-programs/blob/master/challenges/magicSquare.py)
+
+---
+
+> ## Harshad Matrix
+
+An integer number in base 10 which is divisible by sum of it digits is said to be a Harshad Number.
+
+In our case 2 _ 2 sub matrixes should be aggregated from given n _ n matrix and each 2 _ 2 is examined to find if it is harshad matrix, for that we have to find whether all the elements in the 2 _ 2 matrix is harshad or not, if it so we will say that the matrix is harshad matrix
+
+```language
+# Harshad Matrix
+
+# input :-
+    n * n matrix
+
+# output :-
+    all 2*2 harshad matrix
+
+# Time complexity :-
+    O(n^2)
+```
+
+> [harshadMatrix.py](https://github.com/ThayalanGR/competitive-programs/blob/master/challenges/harshadMatrix.py)
