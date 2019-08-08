@@ -45,6 +45,7 @@ This problem, also known as Maximum Subarray Problem, is a very common question 
 
 1. [Magic Square](https://github.com/ThayalanGR/competitive-programs#magic-square)
 2. [Harshad Matrix](https://github.com/ThayalanGR/competitive-programs#harshad-matrix)
+3. [Climbing Leader Board](https://github.com/ThayalanGR/competitive-programs#climbing-leader-board)
 
 ---
 
@@ -102,3 +103,32 @@ In our case 2 _ 2 sub matrixes should be aggregated from given n _ n matrix and 
 ```
 
 > [harshadMatrix.py](https://github.com/ThayalanGR/competitive-programs/blob/master/challenges/harshadMatrix.py)
+
+---
+
+> ## Climbing Leader Board
+
+Alice is playing an arcade game and wants to climb to the top of the leaderboard and wants to track her ranking. The game uses Dense Ranking, so its leaderboard works like this:
+
+The player with the highest score is ranked number on the leaderboard.
+Players who have equal scores receive the same ranking number, and the next player(s) receive the immediately following ranking number.
+
+```language
+
+# input :-
+    7
+    100 100 50 40 40 20 10
+    4
+    5 25 50 120
+
+# output :-
+    6
+    4
+    2
+    1
+
+# Note :-
+    In this challenge we use binary search mechanism for    optimizing the rank search of the alice (otherwise complex     test cases will not passed)
+```
+
+> [climbLeaderBoard.py](https://github.com/ThayalanGR/competitive-programs/blob/master/challenges/climbLeaderBoard.py)
