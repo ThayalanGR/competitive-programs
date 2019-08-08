@@ -12,6 +12,7 @@ This Repository contains
 **Index :-**
 
 1. [Kadanes Algorithm](https://github.com/ThayalanGR/competitive-programs#kadanes-algorithm)
+2. [Binary Search Algorithm](https://github.com/ThayalanGR/competitive-programs#binary-search-algorithm)
 
 ---
 
@@ -38,6 +39,30 @@ This problem, also known as Maximum Subarray Problem, is a very common question 
 > [KadanesAlgorithm.py](https://github.com/ThayalanGR/competitive-programs/blob/master/algorithms/kadanesAlgorithm.py)
 
 ---
+> ## Binary Search Algorithm
+Given a sorted array arr[] of n elements, write a function to search a given element x in arr[].
+
+A simple approach is to do linear search.The time complexity of above algorithm is O(n). Another approach to perform the same task is using Binary Search.
+
+```language
+
+> Compare x with the middle element.
+
+> If x matches with middle element, we return the mid index.
+
+> Else If x is greater than the mid element, then x can only lie in right half subarray after the mid element. So we recur for right half.
+
+> Else (x is smaller) recur for the left half.
+
+```
+
+> [binarySearch.py](https://github.com/ThayalanGR/competitive-programs/blob/master/algorithms/binarySearch.py) (iterative method)
+
+> [binarySearchRecursive.py](https://github.com/ThayalanGR/competitive-programs/blob/master/algorithms/binarySearchRecursive.py) (recursive method)
+
+
+
+----------
 
 # Challenges
 

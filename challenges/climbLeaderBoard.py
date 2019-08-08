@@ -1,26 +1,20 @@
-import math
-import os
-import random
-import re
-import sys
-
 # for optimization
-def binarySearch(arr, l, r, x): 
-    while l <= r: 
-        mid = l + (r - l)//2; 
+def binarySearch(arr, l, r, x):
+    while l <= r:
+        mid = l + (r - l)//2
         if arr[mid] == x:
-            return mid 
+            return mid
         elif arr[mid] < x and arr[mid + 1] > x:
-            return mid  
+            return mid
         elif arr[mid] > x and arr[mid + 1] <= x:
             return mid + 1
-        elif arr[mid] > x: 
+        elif arr[mid] > x:
             l = mid + 1
-        elif arr[mid] < x: 
+        elif arr[mid] < x:
             r = mid - 1
     return -1
 
-# Complete the climbingLeaderboard function below.
+# Complete the climbingLeaderboard function below
 def climbingLeaderboard(scores, alice):
     tempScore = list(dict.fromkeys(scores))
     output = []
@@ -37,9 +31,8 @@ def climbingLeaderboard(scores, alice):
 
     return output
 
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
+if __name__ == '__main__':
     scores_count = int(input())
 
     scores = list(map(int, input().rstrip().split()))
@@ -50,7 +43,4 @@ if __name__ == '__main__':
 
     result = climbingLeaderboard(scores, alice)
 
-    fptr.write('\n'.join(map(str, result)))
-    fptr.write('\n')
-
-    fptr.close()
+    print('\n'.join(map(str, result)))
