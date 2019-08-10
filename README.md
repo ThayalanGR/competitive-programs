@@ -13,6 +13,7 @@ This Repository contains
 
 1. [Kadanes Algorithm](https://github.com/ThayalanGR/competitive-programs#kadanes-algorithm)
 2. [Binary Search Algorithm](https://github.com/ThayalanGR/competitive-programs#binary-search-algorithm)
+2. [Square Root (binary search and Newton Raphson method)](https://github.com/ThayalanGR/competitive-programs#square-root-binary-search-and-newton-raphson-method)
 
 ---
 
@@ -59,6 +60,29 @@ A simple approach is to do linear search.The time complexity of above algorithm 
 > [binarySearch.py](https://github.com/ThayalanGR/competitive-programs/blob/master/algorithms/binarySearch.py) (iterative method)
 
 > [binarySearchRecursive.py](https://github.com/ThayalanGR/competitive-programs/blob/master/algorithms/binarySearchRecursive.py) (recursive method)
+----------
+
+> ## Square Root Binary Search and Newton Raphson method
+
+Math behind square root in calculator function in calculator as well as all programming language
+
+square root can be calculated in two ways one is using binary search and another one using Newton-Raphson method.
+```language
+Newton-Raphson method:
+
+given x as a input number , find the square root of x
+
+two main formulas are
+
+do:
+    f(x) = x^2 - 2
+    f'(x) = 2x
+    x-f(x)/f'(x)
+
+while x reaches approximate precision
+```
+> [squareRoot.py](https://github.com/ThayalanGR/competitive-programs/blob/master/algorithms/squareRoot.py) (binary search method and Newton 
+Raphson method)
 
 
 
